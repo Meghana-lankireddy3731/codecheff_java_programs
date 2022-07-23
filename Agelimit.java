@@ -1,0 +1,43 @@
+//Chef wants to appear in a competitive exam. To take the exam, there are following requirements:
+
+//Minimum age limit is XX (i.e. Age should be greater than or equal to XX).
+//Age should be strictly less than YY.
+//Chef's current Age is AA. Find whether he is currently eligible to take the exam or not.
+
+//Input Format
+//First line will contain TT, number of test cases. Then the test cases follow.
+//Each test case consists of a single line of input, containing three integers X, Y,X,Y, and AA as mentioned in the statement.
+//Output Format
+//For each test case, output YES if Chef is eligible to give the exam, NO otherwise.
+
+//You may print each character of the string in uppercase or lowercase (for example, the strings YES, yEs, yes, and yeS will all be treated as identical).
+
+
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner scan =new Scanner(System.in);
+		int t =scan.nextInt();
+		for (int i=0;i<t;i++)
+		{
+		    int X=scan.nextInt();
+		    int Y=scan.nextInt();
+		    int A=scan.nextInt();
+		    if((X<=A) && (A<Y))
+		    {
+		        System.out.println("Yes");
+		    }
+		    else
+		    {
+		        System.out.println("No");
+		    }
+		}// your code goes here
+	}
+}
